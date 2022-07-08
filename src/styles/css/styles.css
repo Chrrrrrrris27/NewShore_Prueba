@@ -46,15 +46,27 @@ body {
   align-items: flex-end;
 }
 .navbar__items select {
-  background-color: transparent;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  font-size: 1rem;
-  outline: none;
+  display: none;
 }
 .navbar__items a {
   margin-left: 1.3rem;
+}
+
+.navbar__items__lang {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.navbar__items__lang:hover {
+  color: #e6e6e6;
+}
+.navbar__items__lang span {
+  font-size: 1rem;
+}
+.navbar__items__lang img {
+  height: 25px;
+  width: 18px;
+  padding-top: 2px;
 }
 
 .navbar__items--link-active {
@@ -63,6 +75,73 @@ body {
 }
 .navbar__items--link-active:hover {
   border-bottom: 2px solid #e6e6e6;
+}
+
+.footer {
+  background-color: #0A2463;
+  color: #fff;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+
+.footer__title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0 auto 1.25rem;
+  text-align: center;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 130px;
+}
+.footer__social img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer__info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin: 2.25rem auto 0;
+}
+.footer__info ul {
+  padding-left: 0px;
+}
+.footer__info ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+.footer__info ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer__info ul li a:hover {
+  color: #e6e6e6;
+}
+
+.footer_info--align-variant {
+  align-self: center;
+}
+
+.footer__info__title a {
+  color: #FB3640;
+  margin-bottom: 15px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease-in-out;
+}
+.footer__info__title a:hover {
+  color: #f90511;
+}
+
+.footer__info__text {
+  font-size: 0.875rem;
+  max-width: 175px;
 }
 
 .banner {
@@ -109,6 +188,207 @@ body {
   font-size: 1.125rem;
   margin-top: 0;
   margin-bottom: 3rem;
+}
+
+.offers {
+  max-width: 1075px;
+  margin: 4rem auto;
+}
+
+.offers__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offers__header h3 {
+  font-size: 1.625rem;
+  color: #247BA0;
+  margin: 0;
+}
+.offers__header hr {
+  border: 1px solid #605F5E;
+  margin-left: 0.6rem;
+  width: 100%;
+}
+
+.offers__body {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 3rem;
+}
+.offers__body aside {
+  border-radius: 15px;
+  box-shadow: 4px 4px 21px -10px #605f5e;
+  color: #605F5E;
+  justify-self: flex-end;
+  width: 233px;
+}
+.offers__body aside h5 {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-top: 29px;
+  margin-bottom: 36px;
+  text-align: center;
+}
+.offers__body aside ul {
+  padding-left: 0px;
+}
+.offers__body aside li {
+  list-style: none;
+}
+.offers__body aside li a {
+  font-weight: 300;
+  padding-left: 29px;
+}
+.offers__body aside a {
+  color: #605F5E;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+.offers__body aside a:hover {
+  color: #464645;
+}
+.offers__body aside hr {
+  margin: 15.5px auto;
+  width: 100%;
+}
+
+.offers__body__cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.offers__body__card {
+  background-position: top center;
+  background-size: cover;
+  border: 1px solid #0A2463;
+  border-radius: 16px;
+  box-shadow: 0px 0px 19px -6px #605F5E;
+  color: #fff;
+  cursor: pointer;
+  width: 233px;
+  height: 206px;
+}
+.offers__body__card p {
+  margin-top: 1rem;
+  display: none;
+}
+.offers__body__card h4 {
+  margin: 0px;
+}
+.offers__body__card h4, .offers__body__card p, .offers__body__card a {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.offers__body__card a {
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+.offers__body__card a:hover {
+  color: #e6e6e6;
+}
+.offers__body__card span {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.offers__body__card--filter {
+  background-color: rgba(0, 0, 0, 0.6784313725);
+  border-radius: 0px 0px 16px 16px;
+  margin-top: 121px;
+  padding: 9px 15px 13px;
+}
+
+.offers__body__card--Trip-to-Moscow {
+  border: 1px solid #FB3640;
+}
+.offers__body__card--Trip-to-Moscow .offers__body__card--filter {
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 0px;
+  height: 100%;
+  padding: 0px 15px;
+}
+.offers__body__card--Trip-to-Moscow .offers__body__card--filter h4 {
+  padding-top: 28px;
+}
+.offers__body__card--Trip-to-Moscow .offers__body__card--filter span {
+  padding-bottom: 13px;
+}
+.offers__body__card--Trip-to-Moscow p {
+  display: block;
+}
+
+.offers__body__card--Trip-to-Puerto-Rico {
+  border: 1px solid #FB3640;
+}
+.offers__body__card--Trip-to-Puerto-Rico .offers__body__card--filter {
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 0px;
+  height: 100%;
+  padding: 0px 15px;
+}
+.offers__body__card--Trip-to-Puerto-Rico .offers__body__card--filter h4 {
+  padding-top: 28px;
+}
+.offers__body__card--Trip-to-Puerto-Rico .offers__body__card--filter span {
+  padding-bottom: 13px;
+}
+.offers__body__card--Trip-to-Puerto-Rico p {
+  display: block;
+}
+
+.offers__body__card--Trip-to-Honduras {
+  border: 1px solid #FB3640;
+}
+.offers__body__card--Trip-to-Honduras .offers__body__card--filter {
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 0px;
+  height: 100%;
+  padding: 0px 15px;
+}
+.offers__body__card--Trip-to-Honduras .offers__body__card--filter h4 {
+  padding-top: 28px;
+}
+.offers__body__card--Trip-to-Honduras .offers__body__card--filter span {
+  padding-bottom: 13px;
+}
+.offers__body__card--Trip-to-Honduras p {
+  display: block;
+}
+
+.offers__body__destination {
+  text-align: center;
+  color: #605F5E;
+}
+.offers__body__destination h4 {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1.5px;
+}
+.offers__body__destination h5 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 6.5px;
+}
+.offers__body__destination hr {
+  border: 1px solid #605F5E;
+  width: 233px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

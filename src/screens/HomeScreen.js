@@ -1,6 +1,7 @@
 import React from 'react'
 import { Banner } from '../sections/Banner'
-import { Offers } from './Offers'
+import { Offers } from '../sections/Offers'
+
 
 export const HomeScreen = () => {
   return (

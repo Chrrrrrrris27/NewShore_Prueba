@@ -42,16 +42,29 @@
   align-items: flex-end;
 
   select {
-    background-color: transparent;
-    border: none;
-    color: $text_primary;
-    cursor: pointer;
-    font-size: $font_size_base;
-    outline: none;
+    display: none;
   }
 
   a{
     margin-left: ($font_size_base * 1.3);
+  }
+}
+
+.navbar__items__lang{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover{
+    color: darken($text_primary, 10);
+  }
+  span{
+    font-size: $font_size_base;
+  }
+  img {
+    height: 25px;
+    width: 18px;
+    padding-top: 2px;
   }
 }
 .navbar__items--link-active{

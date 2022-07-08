@@ -29,25 +29,26 @@ export const Offers = () => {
 
   const [destination, setDestination] = useState('')
   return (
-    <section>
-      <div>
+    <section className='offers'>
+      <div className='offers__header'>
         <h3>Offers</h3>
         <hr/>
       </div>
-      <div>
-        <div>
-          <section>
+      <div className='offers__body'>
+        <div className=''>
+          <section className='offers__body__cards'>
             {
-              destinations.map((destination) => (
+              destinations.map((destinationInfo) => (
                 <DestinationCard
-                  key={destination.title}
-                  {...destination}
+                  key={destinationInfo.title}
+                  {...destinationInfo}
                   setDestination={setDestination}
+                  destination={destination}
                 />
               ))
             }
           </section>
-          <section>
+          <section className='offers__body__destination'>
             <h4>{destination}</h4>
             <hr/>
             <h5>Chosen destination</h5>

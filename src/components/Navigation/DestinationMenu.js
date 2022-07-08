@@ -27,9 +27,13 @@ export const DestinationMenu = () => {
       <h5>Menu</h5>
       <ul>
         {
-          itemsMenu.map(({name, link}) => (
+          itemsMenu.map(({name, link}, index) => (
             <li key={name}>
               <a href={link}>{name}</a>
+              {
+                index < itemsMenu.length - 1 &&
+                <hr/>
+              }
             </li>
           ))
         }
