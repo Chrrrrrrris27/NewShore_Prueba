@@ -1,0 +1,8 @@
+@import './variables';
+// set default styles
+@import url($font_family_url);
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: $font_family_base;
+}

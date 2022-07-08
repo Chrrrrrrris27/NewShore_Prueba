@@ -1,0 +1,47 @@
+.banner{
+  background-image: url(/src/assets/images/plane.jpg);
+  background-position: top center;
+  background-size: cover;
+  color: $text_primary;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  top: 0px;
+  height: 80vh;
+  width: 100%;
+}
+
+.banner__info{
+  max-width: $width_content;
+  margin: auto;
+  width: 100%;
+
+  button{
+    background-color: $text_footer;
+    border: none;
+    border-radius: 30px;
+    color: $text_primary;
+    cursor: pointer;
+    font-size: ($font_size_base * 1.25);
+    font-weight: bold;
+    padding: $font_size_base ($font_size_base * 4);
+    transition: background-color .3s ease-in-out;
+
+    &:hover{
+      background-color: darken($text_footer, 10);
+    }
+  }
+}
+
+.banner__title{
+  font-size: ($font_size_base * 1.875);
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: ($font_size_base * 0.4);
+}
+
+.banner__body{
+  font-size: ($font_size_base * 1.125);
+  margin-top: 0;
+  margin-bottom: ($font_size_base * 3);
+}
