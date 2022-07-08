@@ -1,0 +1,5 @@
+@include media-max-width(map-get($media_width, hd)){
+  .banner__info{
+    width: 95%;
+  }
+}

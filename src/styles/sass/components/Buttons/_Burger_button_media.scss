@@ -1,0 +1,5 @@
+@include media-min-width(map-get($media_width, tablet)){
+  .burger__button{
+    display: none;
+  }
+}

@@ -1,0 +1,6 @@
+@include media-max-width(map-get($media_width, mobile)){
+  .footer__info{
+    display: block;
+    padding-left: ($font_size_base * 4);
+  }
+}

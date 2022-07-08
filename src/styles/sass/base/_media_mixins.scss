@@ -1,0 +1,21 @@
+@mixin media-max-width($width){
+  @media screen and (max-width: $width){
+    @content;
+  }
+}
+@mixin media-min-width($width){
+  @media screen and (min-width: $width){
+    @content;
+  }
+}
+@mixin media-range-width($max-width: 0px, $min-width: 0px){
+  @media screen and (max-width: $max-width) and (min-width: $min-width){
+    @content;
+  }
+}
+
+@mixin media-range-width-portrait($max-width, $min-width: 0px){
+  @media screen and (max-width: $max-width) and (orientation: portrait){
+    @content;
+  }
+}

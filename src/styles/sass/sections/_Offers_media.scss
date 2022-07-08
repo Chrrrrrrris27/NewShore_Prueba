@@ -1,0 +1,26 @@
+@include media-max-width(map-get($media_width, hd)){
+  .offers{
+    width: 95%;
+  }
+}
+@include media-max-width(map-get($media_width, desktop)){
+  .offers__body{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 32px;
+
+    aside{
+      justify-self: center;
+      grid-row: 1/2;
+    }
+  }
+}
+
+@include media-max-width(map-get($media_width, mobile)){
+  .offers__body__cards{
+    display: block;
+  }
+  .offers__body__card{
+    margin: 16px auto;
+  }
+}

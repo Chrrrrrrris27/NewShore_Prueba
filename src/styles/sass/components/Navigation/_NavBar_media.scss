@@ -1,0 +1,38 @@
+@include media-max-width(map-get($media_width, hd)){
+  .navbar{
+    width: 95%;
+  }
+}
+@include media-max-width(map-get($media_width, tablet)){
+  .navbar{
+    overflow-x: hidden;
+  }
+  .navbar__items{
+    transition: .5s ease-out;
+    position: absolute;
+    height: 100px;
+    top: 90%;
+    left: 100%;
+    
+  }
+  .navbar--active{
+    overflow: visible;
+  }
+  .navbar__items--active{
+    left: 85%;
+  }
+
+  .navbar__items__links{
+    display: flex;
+    flex-direction: column;
+    a{
+      margin-top: 10px;
+    }
+  }
+}
+
+@include media-max-width(map-get($media_width, mobile)){
+  .navbar__items--active{
+    left: 70%;
+  }
+}

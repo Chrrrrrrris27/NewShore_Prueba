@@ -13,3 +13,12 @@ $bg_main: #fff;
 $bg_footer: #0A2463;
 //width content
 $width_content: 1075px;
+
+$media_width:(
+  full_hd: 1600px,
+  hd: 1200px,
+  desktop: 1024px,
+  tablet: 769px,
+  mobile: 600px,
+  xs: 350px
+)

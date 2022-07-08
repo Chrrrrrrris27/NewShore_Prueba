@@ -59,7 +59,7 @@
     color: darken($text_primary, 10);
   }
   span{
-    font-size: $font_size_base;
+    font-size: ($font_size_base * 1.125);
   }
   img {
     height: 25px;
@@ -76,3 +76,5 @@
     border-bottom: 2px solid darken($text_primary, 10);
   }
 }
+
+@import './NavBar_media';

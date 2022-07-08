@@ -1,0 +1,43 @@
+.burger__button{
+  cursor: pointer;
+  // position: relative;
+  width: 50px;
+  top: 2%;
+  right: 1%;
+  z-index: 3;
+
+  transition: border .3s ease-in-out;
+
+  // &:hover{
+  //   border: 1px solid darken($text_primary, 10);
+  // }
+}
+.burger__button__top, .burger__button__bottom{
+  width: 40px;
+  transition: .3s ease-in;
+}
+.burger__button__center{
+  width: 40px;
+  transition: .3s ease-in;
+}
+
+
+.burger__button__top--active{
+  transform: rotate(45deg);
+  transition: .3s ease-in;
+  top: 27%;
+  right: 0%;
+  position: absolute;
+}
+.burger__button__center--active{
+  display: none;
+}
+.burger__button__bottom--active{
+  transform: rotate(-45deg);
+  transition: .3s ease-in;
+  top: 30%;
+  right: 0%;
+  position: absolute;
+}
+
+@import './Burger_button_media';
